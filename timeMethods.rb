@@ -25,7 +25,10 @@ puts sample_year.between?(my_Birthday, today)
 puts sample_year.ctime
 puts sample_year.to_a
 
-puts my_Birthday.strftime("%d %B %y")
+puts my_Birthday.strftime("%d%m%y")
 
 puts Time.parse("2020-04-12")
 puts Time.strptime("03-22-2200", "%m-%d-%Y")
+
+date_of_production = Time.now.strftime("%d%m%y") + "-"
+puts date_of_production
